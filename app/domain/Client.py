@@ -6,4 +6,3 @@ class Client:
         self.name = name
         self.cpf = cpf
         self.age = age
-        self.account = ["0001"]

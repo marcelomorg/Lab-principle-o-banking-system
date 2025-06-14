@@ -6,7 +6,7 @@ if __name__ == "__main__":
     start = Menu()
     print("Iniciando banco de dados...")
     db_succesfully = db.start_db()
-    os.system("sleep 1; clear")
+    os.system("sleep 1")
 
     if db_succesfully:
         start.execution()
