@@ -11,6 +11,9 @@ class Account_service:
         
         
     def deposit(self, value) -> bool:
+        if value <= 0:
+            return False
+
         balance_now = self.account_repository.get_balance(self.account.id)
         new_value = (float(value) + balance_now)
         result = self.account_repository.update_value(new_value, self.account.id)
