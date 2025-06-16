@@ -26,13 +26,17 @@ class Account_service:
 
 
     def withdraw(self, value) -> bool:
+
+        balance_now = self.account_repository.get_balance(self.account.id)
+        new_value = (balance_now-float(value))
+
+        if balance_now <= 0 and value > balance_now and value <= 0:
+            return False
         
         #TODO: individualize values ​​and amount of withdrawals per account.
         if  self.account_repository.get_amount_transection(self.account.id, "withdraw") >= 3 or float(value) > 500:
             return False
-
-        balance_now = self.account_repository.get_balance(self.account.id)
-        new_value = (balance_now-float(value))
+        
         result = self.account_repository.update_value(new_value, self.account.id)
 
         if result:
