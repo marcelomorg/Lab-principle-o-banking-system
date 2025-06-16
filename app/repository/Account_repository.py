@@ -56,6 +56,21 @@ class Account_repository:
         """, (transaction.type, transaction.value, transaction.account_id))
         self.conn.commit()
 
+    def get_amount_transection(self, id_account, type) -> int:
+        try:
+            result = self.cursor.execute("""
+                SELECT COUNT(*) as Transactions_count
+                FROM transactions
+                WHERE type = ?
+                AND DATE(date_hour) = DATE("now")
+                AND account_id = ?                              
+            """, (type, id_account)).fetchone()
+            print(result[0])
+            return int(result[0])
+        except Exception as e:
+            print(e)
+
+
 
     def close_connection(self):
         self.conn.close()
