@@ -1,8 +1,8 @@
 from db.connection import get_connection
-from app.domain.Account import Account
-from app.domain.Transaction import Transaction
+from app.models.account import Account
+from app.models.transaction import Transaction
 
-class Account_repository:
+class AccountRepository:
     def __init__(self):
         self.conn = get_connection()
         self.cursor = self.conn.cursor()
