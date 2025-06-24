@@ -1,12 +1,12 @@
-from app.domain.Account import Account
-from app.domain.Client import Client
-from app.domain.Transaction import Transaction
-from app.repository.Account_repository import Account_repository
+from app.models.account import Account
+from app.models.client import Client
+from app.models.transaction import Transaction
+from app.repositories.account_repository import AccountRepository
 
 
-class Account_service:
+class AccountService:
     def __init__(self, client: Client):
-        self.account_repository = Account_repository()
+        self.account_repository = AccountRepository()
         self.account = self.account_repository.get_account(client.id)
         
         
