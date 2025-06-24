@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1184</width>
+    <height>790</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QFrame" name="container_main">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(14, 25, 35);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QWidget" name="box_main" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>700</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(202, 202, 202);</string>
+         </property>
+         <widget class="QLabel" name="label_title">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>80</y>
+            <width>411</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(14, 25, 35);</string>
+          </property>
+          <property name="text">
+           <string>SELECIONE UMA OPÇÃO</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_withdraw">
+          <property name="geometry">
+           <rect>
+            <x>640</x>
+            <y>230</y>
+            <width>200</width>
+            <height>100</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(14, 25, 35);</string>
+          </property>
+          <property name="text">
+           <string>SAQUE</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_deposit">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>230</y>
+            <width>200</width>
+            <height>100</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(14, 25, 35);</string>
+          </property>
+          <property name="text">
+           <string>DEPÓSITO</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_transaction">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>410</y>
+            <width>200</width>
+            <height>100</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(14, 25, 35);</string>
+          </property>
+          <property name="text">
+           <string>EXTRATO</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_client">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>660</y>
+            <width>271</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(14, 25, 35);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>CLIENTE: JOSEF HEISL YRTLS</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_agencia">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>660</y>
+            <width>181</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(14, 25, 35);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>AGÊNCIA: 000-1</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_account">
+          <property name="geometry">
+           <rect>
+            <x>790</x>
+            <y>660</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(14, 25, 35);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>CONTA: 00001</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_close">
+          <property name="geometry">
+           <rect>
+            <x>640</x>
+            <y>410</y>
+            <width>200</width>
+            <height>100</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(14, 25, 35);</string>
+          </property>
+          <property name="text">
+           <string>ENCERRAR</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="box_logo">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>40</y>
+            <width>201</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../../assets/logo_clear.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="box_footer">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>650</y>
+            <width>1001</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(14, 25, 35);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="Line" name="line">
+          <property name="geometry">
+           <rect>
+            <x>87</x>
+            <y>130</y>
+            <width>831</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <zorder>box_footer</zorder>
+         <zorder>label_title</zorder>
+         <zorder>btn_withdraw</zorder>
+         <zorder>btn_deposit</zorder>
+         <zorder>btn_transaction</zorder>
+         <zorder>label_client</zorder>
+         <zorder>label_agencia</zorder>
+         <zorder>label_account</zorder>
+         <zorder>btn_close</zorder>
+         <zorder>box_logo</zorder>
+         <zorder>line</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
